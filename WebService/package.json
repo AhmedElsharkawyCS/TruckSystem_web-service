@@ -1,0 +1,30 @@
+{
+  "name": "webservice",
+  "version": "1.0.0",
+  "description": "Truck RESTful Web Service",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server.js",
+    "client":"npm run start --prefix ../AdminPanel",
+    "app":"concurrently \"npm run server\" \"npm run client\""
+  },
+  "engine": {
+    "npm": "5.6.0",
+    "node": "8.11.3"
+  },
+  "author": "Ahmed Elsharkawy",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.0",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.2.4",
+    "mongoose-double": "0.0.1",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.18.3"
+  }
+}
